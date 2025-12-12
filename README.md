@@ -85,8 +85,7 @@ app/ ├── java/ (Activities & logic) ├── res/ │   ├── layout/
 
 ## 📦 APK File
 The APK file is provided under the folder:
-
-/apk/DividendCalculator.apk
+apk/app-debug.apk
 
 ---
 
@@ -104,6 +103,5 @@ Course: CDCS240
 ---
 
 ## © Copyright
-© 2025 Unit Trust Dividend Calculator. All rights reserved.
-
+Copyright © 2025
 ---
