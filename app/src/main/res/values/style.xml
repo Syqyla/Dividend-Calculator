@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Cottagecore Theme -->
+    <style name="Theme.IndividualAssignment" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Cottagecore color palette -->
+        <item name="colorPrimary">@color/sage_green</item>
+        <item name="colorPrimaryVariant">@color/text_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/terracotta</item>
+        <item name="colorSecondaryVariant">@color/accent_brown</item>
+        <item name="colorOnSecondary">@color/ivory_white</item>
+        <item name="colorSurface">@color/soft_beige</item>
+        <item name="colorOnSurface">@color/text_dark</item>
+
+        <!-- Correct attribute name for background color -->
+        <item name="android:colorBackground">@color/cottage_cream</item>
+        <item name="android:colorForeground">@color/text_dark</item>
+
+        <!-- Typography -->
+        <item name="android:fontFamily">serif</item>
+
+        <!-- Remove default ActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Optional: If you want rounded corners for buttons -->
+        <item name="materialButtonStyle">@style/Widget.Cottagecore.Button</item>
+    </style>
+
+    <!-- Cottagecore Button Style -->
+    <style name="Widget.Cottagecore.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">20dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="elevation">6dp</item>
+    </style>
+
+</resources>

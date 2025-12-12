@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cottage_cream"
+    android:padding="10dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/sage_green"
+        android:title="About"
+        android:titleTextColor="@color/ivory_white"
+        android:elevation="4dp"
+        android:gravity="center"/>
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_about"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@color/soft_beige"
+            android:elevation="4dp"
+            android:outlineProvider="bounds">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="About"
+                android:textColor="@color/text_dark"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"
+                android:shadowColor="@color/accent_brown"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"/>
+
+            <!-- Decorative line -->
+            <View
+                android:layout_width="120dp"
+                android:layout_height="2dp"
+                android:background="@color/terracotta"
+                android:layout_marginBottom="20dp"
+                android:alpha="0.6"/>
+
+            <!-- Image in a card-like container -->
+            <FrameLayout
+                android:layout_width="280dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/cottage_cream"
+                android:elevation="6dp"
+                android:clipToOutline="true"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/calc_pic"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+            </FrameLayout>
+
+            <!-- Author Info Card -->
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/cottage_cream"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="20dp"
+                android:clipToOutline="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Author"
+                    android:textColor="@color/terracotta"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:text="Nasmalissa Syaqila Binti Jasni"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Details Cards -->
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/cottage_cream"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="20dp"
+                android:clipToOutline="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Matric No:"
+                        android:textColor="@color/terracotta"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2023444016"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_dark"
+                        android:gravity="end"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/accent_brown"
+                    android:alpha="0.5"
+                    android:layout_marginVertical="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Course:"
+                        android:textColor="@color/terracotta"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CS240"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_dark"
+                        android:gravity="end"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Copyright -->
+            <TextView
+                android:text="Copyright © 2025"
+                android:textSize="16sp"
+                android:textColor="@color/text_dark"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:alpha="0.8"/>
+
+            <!-- GitHub Button -->
+            <Button
+                android:id="@+id/txtGitHub"
+                android:layout_width="280dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="30dp"
+                android:text="GitHub Repository"
+                android:textColor="@color/ivory_white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:elevation="6dp"
+                android:padding="12dp"
+                android:clipToOutline="true"
+                android:backgroundTint="@color/sage_green"/>
+
+            <!-- Decorative line at bottom -->
+            <View
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:background="@color/terracotta"
+                android:layout_marginTop="30dp"
+                android:alpha="0.4"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cottagecore Color Palette -->
+    <color name="cottage_cream">#FFF8F5</color>          <!-- Soft cream background -->
+    <color name="terracotta">#B5651D</color>             <!-- Warm terracotta -->
+    <color name="ivory_white">#FFFFF0</color>            <!-- Ivory white -->
+    <color name="accent_brown">#D4B59E</color>           <!-- Light brown for accents -->
+
+    <!-- Original colors -->
+    <color name="sage_green">#8A9A5B</color>             <!-- Sage/Moss green -->
+    <color name="soft_beige">#FAF3E0</color>             <!-- Aged paper color -->
+    <color name="text_dark">#556B2F</color>              <!-- Deep forest green -->
+</resources>
